@@ -9,7 +9,7 @@ There is no native API provided by MaxCompute to submit Spark jobs remotely, so 
 
 **Here comes a first proposal:**
 
-![Airflow with MaxCompute Architecture](./ressources/Airflow on AliCloud with MaxCompute.png?raw=true "Airflow with MaxCompute Architecture")
+![Airflow with MaxCompute Architecture](./ressources/Airflow_on_AliCloud_with_MaxCompute.png?raw=true "Airflow with MaxCompute Architecture")
 
 # Manual implementation steps:
 ## Install Airflow on an ECS instance
