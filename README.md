@@ -19,7 +19,7 @@ There is no native API provided by MaxCompute to submit Spark jobs remotely, so 
   - [Detailed Spark configuration for MaxCompute](https://github.com/aliyun/MaxCompute-Spark/wiki/03.-Spark配置详解?spm=a2c63.p38356.0.0.2cbca563LWmzCE&file=03.-Spark配置详解)
   - In order to make the MaxCompute Spark Client to work with OSS, for example, make it possible to submit job by using this command:
     ```
-    curl -X POST --data '{"file": "oss://kering-cdn-test/project/spark-examples_2.12-1.0.0-SNAPSHOT-shaded.jar", "className": "com.aliyun.odps.spark.examples.SparkPi"}' -H "Content-Type: application/json" http://localhost:8998/batches
+    curl -X POST --data '{"file": "oss://my-test/project/spark-examples_2.12-1.0.0-SNAPSHOT-shaded.jar", "className": "com.aliyun.odps.spark.examples.SparkPi"}' -H "Content-Type: application/json" http://localhost:8998/batches
     ```
     Besides, we need to do some modification on the MaxCompute Spark client to let it support OSS protocol:
     1. Ensure the ${SPARK_HOME}/conf/core-site.xml file supports AliyunOSSFileSystem.
